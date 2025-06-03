@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Merriweather%3Awght%40400%3B700&amp;family=Open+Sans%3Awght%40400%3B600&amp;family=Material+Icons+Outlined" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<title>Smart Car Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    .material-icons-outlined {
+      font-family: 'Material Icons Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'liga';
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: "Open Sans", "Merriweather", serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#121212]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="fixed top-0 left-0 right-0 z-50 bg-[#121212] px-4 pt-3 pb-2 shadow-sm">
+<div class="flex justify-between items-center">
+<span class="text-sm font-medium text-stone-300">9:41</span>
+<div class="flex items-center space-x-1">
+<span class="material-icons-outlined text-stone-300" style="font-size: 18px;">network_wifi</span>
+<span class="material-icons-outlined text-stone-300" style="font-size: 18px;">battery_full</span>
+</div>
+</div>
+</div>
+<main class="flex-grow px-4 pt-16 pb-24">
+<header class="flex flex-col items-center justify-center mb-6">
+<img alt="Car Logo" class="h-16 w-16 mb-4 rounded-full border-2 border-stone-700 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj0eD3Kjd3-FDtVUwPAHrs1qxWB_ygteWK_OgtNADpSgyZXiDggA6c6sS7DF7CrVAMukMdIRLS24zjJey_ydvYwN_vL2-NXb9B8FuyO3M8TSgYdLVt-KoNRTO17v2uzW5Ek4Lutzhf6dlFwdfwN8YB2cS8TGKlLTYbfFvBcFojQMy6WZH6_qkSMu5-Gnu82W8Kjp3RFR6GOoH9txjIAmLnz09TZFvgP1hZ3bohpbt2ToQ3k-QL1hVLNTc0Kfn_jJ0TbWZVvNwQCXZm"/>
+<div class="flex items-center justify-between w-full">
+<h1 class="text-stone-100 text-3xl font-bold" style="font-family: 'Merriweather', serif;">Dashboard</h1>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-[#202020] text-stone-300 transition-colors hover:bg-[#2d2d2d]">
+<span class="material-icons-outlined">settings</span>
+</button>
+</div>
+</header>
+<section class="mb-8">
+<h2 class="text-stone-300 text-xl font-semibold mb-4" style="font-family: 'Merriweather', serif;">Vehicle Status</h2>
+<div class="bg-[#1A1A1A] p-5 rounded-lg shadow-lg border border-stone-700">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-4">
+<div class="text-[#A58A5F] flex items-center justify-center rounded-md bg-[#282828] shrink-0 size-12 p-2.5">
+<span class="material-icons-outlined text-3xl">directions_car</span>
+</div>
+<div>
+<p class="text-stone-100 text-lg font-semibold">Phantom Coupé</p>
+<p class="text-stone-400 text-sm">Model V</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-stone-100 text-lg font-semibold">310 mi</p>
+<p class="text-stone-400 text-sm">Range</p>
+</div>
+</div>
+<div class="h-2.5 bg-[#282828] rounded-full overflow-hidden mb-2 border border-stone-600">
+<div class="h-full bg-[#A58A5F]" style="width: 82%;"></div>
+</div>
+<p class="text-xs text-stone-400 text-center">82% Charged</p>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="text-stone-300 text-xl font-semibold mb-4" style="font-family: 'Merriweather', serif;">Controls</h2>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-center gap-4 bg-[#1A1A1A] p-4 rounded-lg shadow-md transition-colors hover:bg-[#252525] cursor-pointer border border-stone-700">
+<div class="text-[#A58A5F] flex items-center justify-center rounded-md bg-[#282828] shrink-0 size-10 p-2">
+<span class="material-icons-outlined">ac_unit</span>
+</div>
+<p class="text-stone-100 text-base font-medium flex-1">Climate Control</p>
+<span class="material-icons-outlined text-stone-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-[#1A1A1A] p-4 rounded-lg shadow-md transition-colors hover:bg-[#252525] cursor-pointer border border-stone-700">
+<div class="text-[#A58A5F] flex items-center justify-center rounded-md bg-[#282828] shrink-0 size-10 p-2">
+<span class="material-icons-outlined">lock_open</span>
+</div>
+<p class="text-stone-100 text-base font-medium flex-1">Security Lock</p>
+<span class="material-icons-outlined text-stone-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-[#1A1A1A] p-4 rounded-lg shadow-md transition-colors hover:bg-[#252525] cursor-pointer border border-stone-700">
+<div class="text-[#A58A5F] flex items-center justify-center rounded-md bg-[#282828] shrink-0 size-10 p-2">
+<span class="material-icons-outlined">battery_charging_full</span>
+</div>
+<p class="text-stone-100 text-base font-medium flex-1">Charging Status</p>
+<span class="material-icons-outlined text-stone-500">chevron_right</span>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-stone-300 text-xl font-semibold mb-4" style="font-family: 'Merriweather', serif;">Help Center</h2>
+<div class="flex items-center gap-4 bg-[#1A1A1A] p-4 rounded-lg shadow-md transition-colors hover:bg-[#252525] cursor-pointer border border-stone-700">
+<div class="text-[#A58A5F] flex items-center justify-center rounded-md bg-[#282828] shrink-0 size-10 p-2">
+<span class="material-icons-outlined">support_agent</span>
+</div>
+<p class="text-stone-100 text-base font-medium flex-1">Customer Support</p>
+<span class="material-icons-outlined text-stone-500">chevron_right</span>
+</div>
+</section>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 bg-[#1A1A1A] border-t border-stone-700 shadow-t-lg z-50">
+<nav class="flex justify-around items-center px-2 py-3">
+<a class="flex flex-col items-center justify-center gap-1 text-[#A58A5F] w-1/4" href="#">
+<span class="material-icons-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-stone-400 hover:text-[#A58A5F] transition-colors w-1/4" href="#">
+<span class="material-icons-outlined">explore</span>
+<span class="text-xs">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-stone-400 hover:text-[#A58A5F] transition-colors w-1/4" href="#">
+<span class="material-icons-outlined">store</span>
+<span class="text-xs">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-stone-400 hover:text-[#A58A5F] transition-colors w-1/4" href="#">
+<span class="material-icons-outlined">more_horiz</span>
+<span class="text-xs">More</span>
+</a>
+</nav>
+<div class="h-[env(safe-area-inset-bottom)] bg-[#1A1A1A]"></div>
+</footer>
+</div>
+
+</body></html>
